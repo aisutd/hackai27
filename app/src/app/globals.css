@@ -9,7 +9,21 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-mono: var(--font-roboto-mono);
+  --font-ais: var(--font-ais-roboto);
+  
+  --animate-word-reveal: word-reveal 1.5s ease-out forwards;
+
+  @keyframes word-reveal {
+    0% {
+      opacity: 0;
+      /*transform: translateY(8px);*/
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 
 @media (prefers-color-scheme: dark) {
